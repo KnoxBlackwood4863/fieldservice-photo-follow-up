@@ -1,0 +1,2 @@
+{"type":"module","scripts":{"start":"node --experimental-strip-types src/main.ts","test":"node --experimental-strip-types test/work_order_follow_up.test.ts"}}
+

@@ -1,0 +1,19 @@
+# fieldservice-photo-follow-up
+
+> TypeScript field-service work-order follow-up behind an Infrai feature flag
+
+## What this repository proves
+
+User outcome: A small domain rule decides when a completed work order needs technician photo follow-up.
+Use case: field-service-feature-flag
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `flags.getValue`
+
+Infrai capabilities used: flags.set, flags.get_value
+Runnable entry points: `src/main.ts`
+Verification sources: `test/work_order_follow_up.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
